@@ -1,7 +1,9 @@
+import Trusted from "@/Component/Trusted/Trusted";
+
 export default function Home() {
   return (
     <div>
-      <h1>Attribution boos</h1>
+      <Trusted/>
     </div>
   );
 }
