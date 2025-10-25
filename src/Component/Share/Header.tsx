@@ -93,7 +93,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         transition={{ duration: 0.8 }}
       >
         <motion.nav
-          className="relative rounded-xl py-3 sm:py-4 bg-white/5 backdrop-blur-md border border-white/10 max-w-screen-2xl mx-auto"
+          className="relative rounded-xl py-3 sm:py-4 bg-transparent backdrop-blur-md border border-white/10 max-w-screen-2xl mx-auto"
           whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.3 }}
         >
@@ -107,7 +107,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
                 <Image
                   src="/logo.png"
                   alt="Logo"
-                  width={120}
+                  width={180}
                   height={40}
                   className="object-contain"
                   priority
