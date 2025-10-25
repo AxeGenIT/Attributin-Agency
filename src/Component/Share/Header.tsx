@@ -7,6 +7,7 @@ import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { usePathname } from "next/navigation";
 import servicesData from "../../data/service.json";
+import Button from "@/utils/Button";
 
 interface Service {
   id: number;
@@ -226,12 +227,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
             </motion.div>
 
             {/* Contact Button */}
-            <Link
-              href="/contact"
-              className="hidden lg:block bg-[#07F4Fa] text-black px-5 py-2 rounded-full shadow-lg text-sm sm:text-base"
-            >
-              Get Started
-            </Link>
+            <Button/>
 
             {/* Mobile Menu Toggle */}
             <button
