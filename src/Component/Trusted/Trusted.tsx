@@ -12,7 +12,8 @@ const imageLogos = [
     return (
         <div className=" container py-6 space-y-5">
             <div>
-
+              <h1 className="text-white text-center">Our Trusted Partner</h1>
+            <p className="text-white text-sm text-center">Proud to work with brands and partners who share our vision for measurable, <br /> performance-driven growth.</p>
             </div>
             <div style={{ height: '80px', position: 'relative', overflow: 'hidden'}}>
       <LogoLoop
