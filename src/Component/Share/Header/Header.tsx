@@ -19,7 +19,7 @@ const Header = () => {
   ];
   return (
     <div className="">
-      <div className="container hidden md:hidden lg:block py-4 px-2">
+      <div className="container hidden md:hidden lg:block py-4 px-2 rounded-2xl border bg-transparent">
         <div className="flex items-center justify-between">
           {/* logo */}
           <div>

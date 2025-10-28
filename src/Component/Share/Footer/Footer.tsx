@@ -81,7 +81,7 @@ const contacts:ContactType[] = [
                             {
                                 services.map((service,index)=>
                                 
-                                <li className='text-gray-300 text-sm hover:text-cyan-400 transition-colors duration-300'><a href="">{service}</a></li>
+                                <li key={index} className='text-gray-300 text-sm hover:text-cyan-400 transition-colors duration-300'><a href="">{service}</a></li>
                                 )
 
                             }
