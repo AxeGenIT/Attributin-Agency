@@ -2,12 +2,10 @@ import Title from "@/utils/Title";
 import ServicesContainer from "../Serviecs/ServicesContainer";
 import LightRays from "@/components/LightRays";
 
- 
-
 const Services = () => {
-    return (
-        <div>
-            <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+  return (
+    <div className="relative">
+<div style={{ width: '100%', height: '600px', position: 'absolute' }}>
   <LightRays
     raysOrigin="top-center"
     raysColor="#00ffff"
@@ -21,12 +19,16 @@ const Services = () => {
     className="custom-rays"
   />
 </div>
-            <div className=" py-16">
-                <Title title="Our Dedicated" gradient="Services" description="Attribution is a one-stop digital service company offering web, app, and AI development, design, marketing, and analytics — everything your business needs to grow online"/>
-                <ServicesContainer/>
-            </div>
-        </div>
-    );
+      <div className=" py-16">
+        <Title
+          title="Our Dedicated"
+          gradient="Services"
+          description="Attribution is a one-stop digital service company offering web, app, and AI development, design, marketing, and analytics — everything your business needs to grow online"
+        />
+        <ServicesContainer />
+      </div>
+    </div>
+  );
 };
 
 export default Services;
