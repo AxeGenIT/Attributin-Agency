@@ -18,7 +18,7 @@ const Header = () => {
     { label: "LinkedIn", link: "https://linkedin.com" },
   ];
   return (
-    <div className="">
+    <div className="bg-transparent">
       <div className="container hidden md:hidden lg:block py-4 px-2  bg-transparent">
         <div className="flex items-center justify-between">
           {/* logo */}
@@ -37,7 +37,7 @@ const Header = () => {
         </div>
       </div>
       <div className="container block md:block lg:hidden">
-        <div style={{ height: "20vh", background: "#ff171700" }}>
+        <div style={{ height: "20vh" }}>
           <StaggeredMenu
             position="right"
             items={menuItems}

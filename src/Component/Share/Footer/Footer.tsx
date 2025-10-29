@@ -91,7 +91,7 @@ const contacts:ContactType[] = [
                         <h1 className='text-white font-semibold text-lg mb-6'>Company</h1>
                         <ul className='space-y-2'>
                             {
-                                pages.map((page)=><li className='text-gray-300 text-sm hover:text-cyan-400 transition-colors duration-300'><a href="">{page}</a></li>)
+                                pages.map((page,index)=><li key={index} className='text-gray-300 text-sm hover:text-cyan-400 transition-colors duration-300'><a href="">{page}</a></li>)
                             }
                         </ul>
                     </div>

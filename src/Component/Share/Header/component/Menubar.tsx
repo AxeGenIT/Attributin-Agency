@@ -80,7 +80,7 @@ function MenuBar(): React.JSX.Element {
       initial="initial"
       whileHover="hover"
     >
-      <ul className="flex items-center  relative z-10">
+      <ul className="flex items-center gap-1  relative z-10">
         {menuItems.map((item: MenuItem) => (
           <motion.li key={item.label} className="relative">
             <motion.div
@@ -121,7 +121,7 @@ function MenuBar(): React.JSX.Element {
                 <span className={`transition-colors duration-300 ${item.iconColor}`}>
                   {item.icon}
                 </span>
-                <span className="font-medium ">{item.label}</span>
+                <span className="font-medium text-white">{item.label}</span>
               </motion.a>
             </motion.div>
           </motion.li>
