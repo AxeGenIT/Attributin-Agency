@@ -1,5 +1,7 @@
 import Banner from "@/Component/Home/Banner";
+import DigitalGrow from "@/Component/Home/DigitalGrow";
 import GooglePartner from "@/Component/Home/GooglePartner";
+import PromoVideo from "@/Component/Home/PromoVideo";
 import ResultsSection from "@/Component/Home/Resut";
 import Services from "@/Component/Home/Services";
 import ProBanner from "@/Component/Share/ProBanner/ProBanner";
@@ -19,6 +21,8 @@ export default function Home() {
       />
       <ResultsSection/>
       <Trusted/>
+      <PromoVideo/>
+      <DigitalGrow/>
     </div>
   );
 }
