@@ -1,5 +1,6 @@
 import Banner from "@/Component/Home/Banner";
 import ChallengesSection from "@/Component/Home/Challenges";
+import ContactSection from "@/Component/Home/Contact/Contact";
 import DigitalGrow from "@/Component/Home/DigitalGrow";
 import GooglePartner from "@/Component/Home/GooglePartner";
 import ProcessSection from "@/Component/Home/Process";
@@ -27,6 +28,7 @@ export default function Home() {
       <DigitalGrow/>
       <ProcessSection/>
       <ChallengesSection/>
+      <ContactSection/>
     </div>
   );
 }

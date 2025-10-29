@@ -9,7 +9,7 @@ const PromoVideo = () => {
                 >
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
                         Attribution Booster In{' '}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+                        <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500">
                             1 Minutes
                         </span>
                     </h2>
