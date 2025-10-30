@@ -1,5 +1,6 @@
 "use client";
 import LaserFlow from "@/components/LaserFlow";
+import { MoveRight } from "lucide-react";
 import { useRef } from "react";
 
 const Banner = () => {
@@ -18,8 +19,9 @@ const Banner = () => {
             development, precision analytics, performance-driven ads, and
             conversion-first design.
           </p>
-          <div className="py-2 px-5 bg-white rounded-full w-[130px]">
-            <span className="text-black">Get Start</span>
+          <div className="py-2 px-5 bg-white rounded-full w-[150px] flex  items-center justify-center gap-2">
+            <span className="text-black font-semibold text-lg ">Get Start </span>
+            <MoveRight  className="text-black  mt-1" />
           </div>
         </div>
 

@@ -257,7 +257,7 @@ const ContactSection: React.FC = () => {
 
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                                         <div
-                                            className="flex-1 group bg-gradient-to-r from-slate-800/60 to-slate-900/60 border border-white/10 rounded-xl p-5 sm:p-6 flex items-center gap-4 shadow-lg"
+                                            className="flex-1 group bg-linear-to-r from-slate-800/60 to-slate-900/60 border border-white/10 rounded-xl p-5 sm:p-6 flex items-center gap-4 shadow-lg"
                                         >
                                             <div className="w-12 h-12 rounded-full bg-cyan-400/10 border border-cyan-400/30 flex items-center justify-center">
                                                 <Phone className="w-6 h-6 text-cyan-300" />
@@ -526,7 +526,7 @@ const ContactSection: React.FC = () => {
                 <AnimatePresence>
                     {isCalendlyOpen && (
                         <motion.div
-                            className="fixed inset-0 z-[10000] bg-black/70 backdrop-blur-sm flex items-center justify-center px-4"
+                            className="fixed inset-0 -z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center px-4"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}

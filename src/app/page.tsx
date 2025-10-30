@@ -3,6 +3,7 @@ import ChallengesSection from "@/Component/Home/Challenges";
 import ContactSection from "@/Component/Home/Contact/Contact";
 import DigitalGrow from "@/Component/Home/DigitalGrow";
 import GooglePartner from "@/Component/Home/GooglePartner";
+import TeamSection from "@/Component/Home/Our team/TeamSection";
 import ProcessSection from "@/Component/Home/Process";
 import PromoVideo from "@/Component/Home/PromoVideo";
 import ResultsSection from "@/Component/Home/Resut";
@@ -29,6 +30,7 @@ export default function Home() {
       <ProcessSection/>
       <ChallengesSection/>
       <ContactSection/>
+      <TeamSection/>
     </div>
   );
 }
