@@ -9,6 +9,8 @@ import PromoVideo from "@/Component/Home/PromoVideo";
 import ResultsSection from "@/Component/Home/Resut";
 import Services from "@/Component/Home/Services";
 import ProBanner from "@/Component/Share/ProBanner/ProBanner";
+import Testimonial from "@/Component/Testimonial/Testimonial";
+import TestimonialsSection from "@/Component/TestimonialSection";
 import Trusted from "@/Component/Trusted/Trusted";
 
 export default function Home() {
@@ -31,6 +33,7 @@ export default function Home() {
       <ChallengesSection/>
       <ContactSection/>
       <TeamSection/>
+      <TestimonialsSection/>
     </div>
   );
 }
