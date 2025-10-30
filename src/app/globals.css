@@ -219,5 +219,42 @@
     transparent
   );
 }
+ 
+.cardGolw {
+  position: relative;
+  z-index: 1;
+  border-radius: 1rem; /* adjust to your card's shape */
+  overflow: hidden;
+}
+
+.cardGolw::before,
+.cardGolw::after {
+  --deg: 0deg;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--deg) at center,
+    #07f4fa,
+    #09e3e9,
+    #05686b,
+    #00c3ff,
+    #07f4fa
+  );
+  z-index: -1;
+  animation: autoRotated 2s linear infinite;
+}
+
+.cardGolw::after {
+  filter: blur(10px);
+  opacity: 0.8;
+}
+
+@keyframes autoRotated {
+  to {
+    --deg: 360deg;
+  }
+}
 
  
