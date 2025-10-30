@@ -1,7 +1,5 @@
-'use client'
 import React, { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
- 
 
 export interface StaggeredMenuItem {
   label: string;
@@ -388,8 +386,8 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
               alt="Logo"
               className="sm-logo-img block h-8 w-auto object-contain"
               draggable={false}
-              width={180}
-              height={40}
+              width={110}
+              height={24}
             />
           </div>
 
@@ -473,7 +471,6 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                 </li>
               )}
             </ul>
-             
 
             {displaySocials && socialItems && socialItems.length > 0 && (
               <div className="sm-socials mt-auto pt-8 flex flex-col gap-3" aria-label="Social links">
