@@ -1,47 +1,57 @@
 import { ThreeDScrollTriggerContainer, ThreeDScrollTriggerRow } from "@/components/lightswind/3d-scroll-trigger";
+import Title from "@/utils/Title";
+import TestimonialCard from "./Component/TestimonialCard";
+import { testimonials } from "@/data/testimonials";
+ 
 
  
 
 
 const Testimonial = () => {
     return (
-        <div>
-            <ThreeDScrollTriggerContainer>
-  <ThreeDScrollTriggerRow baseVelocity={5} direction={1}>
-    <div className="px-4 py-2 bg-blue-500 text-white rounded-lg">
-      Item 1
-    </div>
-    <div className="px-4 py-2 bg-green-500 text-white rounded-lg">
-      Item 2
-    </div>
-    <div className="px-4 py-2 bg-red-500 text-white rounded-lg">
-      Item 3
-    </div>
+      <section className="">
+                <div className="container py-10 space-y-10">
+          <div>
+            <Title title="Trusted by" gradient="Thousands" description="Don't just take our word for it - hear what our clients say"/>
+          </div>
+          <div className="relative">
+                        <ThreeDScrollTriggerContainer>
+  <ThreeDScrollTriggerRow baseVelocity={5} direction={1} className="my-5">
+  
+   {
+    testimonials.map(testimonial => {
+      const {id,name,company,avatar,comment} = testimonial;
+      return(
+        <TestimonialCard key={id} name={name} company={company} comment={comment} avatar={avatar}/>
+      )
+    })
+   }
+    
   </ThreeDScrollTriggerRow>
-  <ThreeDScrollTriggerRow baseVelocity={5} direction={-1}>
-    <div className="px-4 py-2 bg-blue-500 text-white rounded-lg">
-      Item 1
-    </div>
-    <div className="px-4 py-2 bg-green-500 text-white rounded-lg">
-      Item 2
-    </div>
-    <div className="px-4 py-2 bg-red-500 text-white rounded-lg">
-      Item 3
-    </div>
+  <ThreeDScrollTriggerRow baseVelocity={5} direction={-1} className="mb-5">
+{
+    testimonials.map(testimonial => {
+      const {id,name,company,avatar,comment} = testimonial;
+      return(
+        <TestimonialCard key={id} name={name} company={company} comment={comment} avatar={avatar}/>
+      )
+    })
+   }
   </ThreeDScrollTriggerRow>
   <ThreeDScrollTriggerRow baseVelocity={5} direction={1}>
-    <div className="px-4 py-2 bg-blue-500 text-white rounded-lg">
-      Item 1
-    </div>
-    <div className="px-4 py-2 bg-green-500 text-white rounded-lg">
-      Item 2
-    </div>
-    <div className="px-4 py-2 bg-red-500 text-white rounded-lg">
-      Item 3
-    </div>
+{
+    testimonials.map(testimonial => {
+      const {id,name,company,avatar,comment} = testimonial;
+      return(
+        <TestimonialCard key={id} name={name} company={company} comment={comment} avatar={avatar}/>
+      )
+    })
+   }
   </ThreeDScrollTriggerRow>
 </ThreeDScrollTriggerContainer>
+          </div>
         </div>
+      </section>
     );
 };
 

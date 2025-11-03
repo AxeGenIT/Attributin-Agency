@@ -6,13 +6,13 @@ import Title from "@/utils/Title";
 
 const Trusted = () => {
 const imageLogos = [
-  { src: "/brands/avinell_client.png", alt: "Company 1", href: "https://company1.com" },
+  { src: "/brands/dma_client.webp", alt: "Company 1", href: "https://company1.com" },
   { src: "/brands/avinell.png", alt: "Company 2", href: "https://company2.com" },
   { src: "/brands/cardo_client.png", alt: "Company 3", href: "https://company3.com" },
 ];
     return (
         <div className=" container py-6 space-y-5">
-          <Title title='Our Trusted ' gradient='Partner' description='Proud to work with brands and partners who share our vision for measurable,performance-driven growth.'/>
+          <Title title='Our Trusted ' gradient='Clients' description='Proud to work with brands and partners who share our vision for measurable,performance-driven growth.'/>
            
             <div style={{ height: '80px', position: 'relative', overflow: 'hidden'}}>
       <LogoLoop

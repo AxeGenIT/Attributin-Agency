@@ -212,7 +212,7 @@
   background-image: radial-gradient(
     transparent,
     transparent,
-    #09E3E9,
+    #09E3E9 ,
     #07f4fa,
     #09E3E9,
     transparent,
@@ -256,5 +256,14 @@
     --deg: 360deg;
   }
 }
-
+ 
+.partner::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:red;
+  z-index: -1;
+  transform: skew(2deg,2deg);
+ 
+}
  

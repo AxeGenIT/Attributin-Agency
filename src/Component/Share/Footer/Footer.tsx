@@ -42,7 +42,7 @@ const contacts:ContactType[] = [
   { image: "/c3.png", text: "Address: Raleigh 227 Fayetteville", color: "text-blue-400" }
 ];
     return (
-        <div className='w-full'>
+        <div className='w-full px-4'>
             <div className='container px-4 md:px-4 lg:px-1 xl:px-0 py-6'>
                 <div className='flex justify-between text-white flex-wrap gap-5 md:gap-0'>
                     <div>

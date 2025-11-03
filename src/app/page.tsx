@@ -1,4 +1,5 @@
-import Banner from "@/Component/Home/Banner";
+import Banner from "@/Component/Home/Banner/Banner";
+import Banner_logo from "@/Component/Home/Banner/Banner_logo";
 import ChallengesSection from "@/Component/Home/Challenges";
 import ContactSection from "@/Component/Home/Contact/Contact";
 import DigitalGrow from "@/Component/Home/DigitalGrow";
@@ -12,6 +13,7 @@ import ProBanner from "@/Component/Share/ProBanner/ProBanner";
 import Testimonial from "@/Component/Testimonial/Testimonial";
 import TestimonialsSection from "@/Component/TestimonialSection";
 import Trusted from "@/Component/Trusted/Trusted";
+import TrustedLogo from "@/Component/Trusted/TrustedLogo";
 
 export default function Home() {
   return (
@@ -30,10 +32,11 @@ export default function Home() {
       <PromoVideo/>
       <DigitalGrow/>
       <ProcessSection/>
+      <TrustedLogo/>
       <ChallengesSection/>
       <ContactSection/>
       <TeamSection/>
-      <TestimonialsSection/>
+      <Testimonial/>
     </div>
   );
 }
