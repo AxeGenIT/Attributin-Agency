@@ -9,7 +9,7 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="container relative h-[850px] flex items-center justify-between">
+      <div className="container relative h-[850px] flex items-center justify-between px-4">
         <div className="content absolute top-12 text-white z-40 space-y-5">
           <h1 className="text-white font-bold text-6xl">
             Built to Scale.<br /> Optimized for Growth.
@@ -112,7 +112,8 @@ const Banner = () => {
               style={{
                 position: "absolute",
                 width: "100%",
-                top: "-50%",
+                height:'100%',
+                top: "0%",
                 zIndex: 5,
                 mixBlendMode: "lighten",
                 opacity: 0.3,

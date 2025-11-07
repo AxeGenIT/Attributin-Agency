@@ -10,7 +10,7 @@ import { testimonials } from "@/data/testimonials";
 const Testimonial = () => {
     return (
       <section className="">
-                <div className="container py-10 space-y-10">
+                <div className="container py-10 space-y-10 ">
           <div>
             <Title title="Trusted by" gradient="Thousands" description="Don't just take our word for it - hear what our clients say"/>
           </div>

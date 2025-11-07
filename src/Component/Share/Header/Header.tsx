@@ -8,8 +8,11 @@ const Header = () => {
   const menuItems = [
     { label: "Home", ariaLabel: "Go to home page", link: "/" },
     { label: "About", ariaLabel: "Learn about us", link: "/about" },
+    { label: "Portfolio", ariaLabel: "Learn about us", link: "/Portfolio" },
+    { label: "About", ariaLabel: "Learn about us", link: "/about" },
     { label: "Services", ariaLabel: "View our services", link: "/services" },
     { label: "Contact", ariaLabel: "Get in touch", link: "/contact" },
+    { label: "Carrer", ariaLabel: "Get in touch", link: "/carrer" },
   ];
 
   const socialItems = [
@@ -18,7 +21,7 @@ const Header = () => {
     { label: "LinkedIn", link: "https://linkedin.com" },
   ];
   return (
-    <div className="bg-transparent">
+    <div className="bg-black">
       <div className="container hidden md:hidden lg:block py-4 px-2  bg-transparent">
         <div className="flex items-center justify-between">
           {/* logo */}

@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect, useRef, RefObject } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { BorderBeam } from '@/components/ui/border-beam';
+import Title from '@/utils/Title';
 
 // ✅ Custom Hook for Counter Animation
 const useCounter = (
@@ -72,32 +74,21 @@ const ResultsSection: React.FC = () => {
       <div className="relative z-20 mx-auto container px-4">
         {/* Header Section */}
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 mb-8 md:mb-12 lg:mb-16"
+          className="  mb-8 md:mb-12 lg:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-bold text-white leading-tight">
-              Real Results. Global<br />
-              Reach. Proven Trust
-            </h2>
-          </div>
-          <div className="flex items-end">
-            <p className="text-white/70 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
-              Attribution Booster delivers measurable growth through full-stack
-              development, performance marketing, and analytics-driven strategies.
-              With a global footprint and a client-first mindset
-            </p>
-          </div>
+          
+          <Title title='Driven by Results. Trusted ' gradient='Globally' description='Driving scalable growth through innovation, performance, and insight—built around your goals.'/>
         </motion.div>
 
         {/* Stats Grid - Top Row */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
           {/* Projects Complete Card */}
           <motion.div
-            className="backdrop-blur-md bg-white/10 border-2 border-white/20 rounded-2xl p-4 md:p-6 lg:p-8 relative overflow-hidden group hover:border-cyan-400/50 transition-all duration-300 h-48 sm:h-56 md:h-64 lg:h-72"
+            className="backdrop-blur-md bg-white/10  rounded-2xl p-4 md:p-6 lg:p-8 relative overflow-hidden group hover:border-cyan-400/50 transition-all duration-300 h-48 sm:h-56 md:h-64 lg:h-72"
             style={{
               backgroundImage: `url('/r3.png')`,
               backgroundPosition: 'center',
@@ -124,11 +115,23 @@ const ResultsSection: React.FC = () => {
                 <div className="text-white/80 text-sm sm:text-base md:text-lg lg:text-xl">Project Complete</div>
               </div>
             </div>
+             <BorderBeam
+        duration={6}
+        delay={3}
+        size={300}
+        borderWidth={2}
+        className="from-transparent via-blue-500 to-transparent"
+      />
+        <BorderBeam
+        duration={6}
+        size={300} reverse={true}
+        className="from-transparent via-red-500 to-transparent"
+      />
           </motion.div>
 
           {/* Experience Card */}
           <motion.div
-            className="backdrop-blur-md bg-white/10 border-2 border-white/20 rounded-2xl p-4 md:p-6 lg:p-8 relative overflow-hidden group hover:border-cyan-400/50 transition-all duration-300 h-48 sm:h-56 md:h-64 lg:h-72"
+            className="backdrop-blur-md bg-white/10 rounded-2xl p-4 md:p-6 lg:p-8 relative overflow-hidden group hover:border-cyan-400/50 transition-all duration-300 h-48 sm:h-56 md:h-64 lg:h-72"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -160,6 +163,18 @@ const ResultsSection: React.FC = () => {
                 exceed expectations.
               </p>
             </div>
+                 <BorderBeam
+        duration={6}
+        delay={3}
+        size={300}
+        borderWidth={2}
+        className="from-transparent via-blue-500 to-transparent"
+      />
+        <BorderBeam
+        duration={6}
+        size={300} reverse={true}
+        className="from-transparent via-red-500 to-transparent"
+      />
           </motion.div>
         </div>
 
@@ -179,6 +194,7 @@ const ResultsSection: React.FC = () => {
               alt="Skills Cloud"
               className="w-full h-auto object-contain sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
             />
+            
           </motion.div>
 
           {/* Awards Card - 2/3 width on desktop, full width on mobile */}

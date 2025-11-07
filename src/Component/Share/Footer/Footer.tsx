@@ -5,6 +5,7 @@ import React from 'react';
 import Contact from './component/Contact';
 import SocialIcon from './component/SocialIcon';
 import { Star } from 'lucide-react';
+import { ShineBorder } from '@/components/ui/shine-border';
 
 const Footer = () => {
     const pages:string[] = ["About Us",
@@ -121,8 +122,8 @@ const contacts:ContactType[] = [
             
           >
             {/* Shine Border Effect */}
-            <div className="shine-border absolute inset-0 rounded-xl pointer-events-none"></div>
-
+            <div className="  absolute inset-0 rounded-xl pointer-events-none"></div>
+             <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
             <div className="flex justify-between items-start relative z-10">
               {/* Left side - Clutch logo and rating */}
               <div className="flex flex-col">

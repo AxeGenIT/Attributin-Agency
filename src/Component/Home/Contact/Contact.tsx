@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { MapPin, Mail, Phone, Clock, ArrowRight, Loader2, ArrowUpRight, X } from 'lucide-react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import toast, { Toaster } from 'react-hot-toast';
+import Galaxy from '@/components/Galaxy';
 
 interface FormData {
   name: string;
@@ -194,8 +195,12 @@ const ContactSection: React.FC = () => {
                     },
                 }}
             />
-            <div className="container mx-auto">
-                <section className="relative z-10 w-full py-16 lg:py-24 overflow-hidden">
+            <div className="container mx-auto relative">
+                                   <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+  <Galaxy />
+</div>
+                <section className="relative z-10 w-full py-16 lg:py-24 ">
+  
                     <motion.div
                         className="grid grid-cols-1 lg:grid-cols-2 gap-12"
                         variants={containerVariants}

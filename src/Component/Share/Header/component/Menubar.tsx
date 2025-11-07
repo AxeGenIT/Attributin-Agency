@@ -92,7 +92,7 @@ function MenuBar(): React.JSX.Element {
               {/* Front-facing menu item */}
               <motion.a
                 href={item.href}
-                className="flex items-center gap-1 px-2 py-2 relative z-10 bg-transparent text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors rounded-xl"
+                className="flex items-center gap-1 px-2 py-2 relative z-10 bg-transparent text-white dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors rounded-xl"
                 variants={itemVariants}
                 transition={sharedTransition}
                 style={{
@@ -109,7 +109,7 @@ function MenuBar(): React.JSX.Element {
               {/* Back-facing menu item for 3D flip effect */}
               <motion.a
                 href={item.href}
-                className="flex items-center gap-2 px-4 py-2 absolute inset-0 z-10 bg-transparent text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors rounded-xl"
+                className="flex items-center gap-1 px-2 py-2 absolute inset-0 z-10 bg-transparent text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors rounded-xl"
                 variants={backVariants}
                 transition={sharedTransition}
                 style={{
@@ -121,7 +121,7 @@ function MenuBar(): React.JSX.Element {
                 <span className={`transition-colors duration-300 ${item.iconColor}`}>
                   {item.icon}
                 </span>
-                <span className="font-medium text-white">{item.label}</span>
+                <span className={`font-medium ${item.iconColor}`} >{item.label}</span>
               </motion.a>
             </motion.div>
           </motion.li>

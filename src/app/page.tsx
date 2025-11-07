@@ -32,8 +32,10 @@ export default function Home() {
         image="/promo1.svg"
         buttonText="Start Now"
       />
-      <ResultsSection/>
       <Trusted/>
+      <Portfolio02/>
+      <ResultsSection/>
+      
       <PromoVideo/>
       <DigitalGrow/>
       <ProcessSection/>
@@ -42,8 +44,7 @@ export default function Home() {
       <ContactSection/>
       <TeamSection/>
       <Testimonial/>
-      <Portfolio02/>
-      <Portfolio01/>
+      
     </div>
   );
 }

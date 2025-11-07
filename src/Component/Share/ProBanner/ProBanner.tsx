@@ -23,29 +23,29 @@ const ProBanner = ({ headline, description, buttonText, image }:SectionContent) 
         <img
           src="/hero1.png"
           alt="Decorative Left"
-          className="pointer-events-none select-none absolute left-0 top-0 h-24 sm:h-32 md:h-48 lg:h-64 xl:h-72 w-auto opacity-40 sm:opacity-50 z-0"
+          className="pointer-events-none select-none absolute left-0 top-0 h-24 sm:h-32 md:h-48 lg:h-64 xl:h-72 w-auto opacity-100 sm:opacity-50 z-0"
           aria-hidden="true"
           style={{borderTopLeftRadius:'30px'}}
         />
         <img
           src="/hero2.png"
           alt="Decorative Right"
-          className="pointer-events-none select-none absolute right-0 top-0 h-24 sm:h-32 md:h-48 lg:h-64 xl:h-72 w-auto opacity-40 sm:opacity-50 z-0"
+          className="pointer-events-none select-none absolute right-0 top-0 h-24 sm:h-32 md:h-48 lg:h-64 xl:h-72 w-auto opacity-100 sm:opacity-50 z-0"
           aria-hidden="true"
           style={{borderTopRightRadius:'30px'}}
         />
         {/* Left: Text Content */}
         <motion.div
-          className="flex-1 w-full text-left"
+          className="flex-1 w-full text-left "
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold text-white mb-3 sm:mb-4  quote shadow">
             {headline}
           </h2>
-          <p className="text-white/70 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 max-w-xl">
+          <p className="text-white/70 text-sm sm:text-base md:text-base mb-6 sm:mb-8 max-w-xl mt-2">
             {description}
           </p>
           <motion.a
