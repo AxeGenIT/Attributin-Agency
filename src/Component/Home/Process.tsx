@@ -1,4 +1,8 @@
 "use client"
+ 
+import DotGrid from "@/components/DotGrid";
+import { ShineBorder } from "@/components/ui/shine-border";
+import Title from "@/utils/Title";
 import { motion, Variants } from "framer-motion"
 import Image from "next/image"
  interface ProcessStep {
@@ -67,9 +71,22 @@ const ProcessSection = () => {
                 className="pointer-events-none select-none absolute left-0 top-0 h-40 md:h-64 opacity-30 z-0"
                 aria-hidden="true"
             /> */}
-            <div className="container mx-auto px-4 relative z-10">
+ <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+  <DotGrid
+    dotSize={5}
+    gap={15}
+    baseColor="#271e37"
+    activeColor="#5227ff"
+    proximity={120}
+    shockRadius={250}
+    shockStrength={5}
+    resistance={750}
+    returnDuration={1.5}
+  />
+</div>
+            <div className="container mx-auto px-4 relative z-10 space-y-5">
                 {/* Section Header */}
-                <motion.div
+                {/* <motion.div
                     className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-16"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -82,7 +99,8 @@ const ProcessSection = () => {
                     <p className="text-base text-white/70 max-w-lg lg:text-left">
                         We prioritize open communication, transparency, and strategy from day one, ensuring every project starts with clarity and ends with measurable success.
                     </p>
-                </motion.div>
+                </motion.div> */}
+                <Title title="Collaboration" gradient="Process" description="We prioritize open communication, transparency, and strategy from day one, ensuring every project starts with clarity and ends with measurable success."/>
 
                 {/* Process Steps - Horizontal Layout */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -102,11 +120,11 @@ const ProcessSection = () => {
                                 </div>
                                 {/* Process Card with Glass Effect */}
                                 <motion.div
-                                    className="backdrop-blur-md bg-white/10 border-2 border-white/20 hover:border-cyan-400/50 rounded-2xl p-6 h-[280px] transition-all duration-300 group relative overflow-visible shadow-xl mt-5"
+                                    className="backdrop-blur-md bg-white/10 hover:border-cyan-400/50 rounded-2xl p-6 h-[280px] transition-all duration-300 group relative overflow-visible shadow-xl mt-5"
                                     whileHover={{ scale: 1.02, y: -2 }}
                                 >
                                     {/* Shine Border Effect */}
-                                    <div className="shine-border absolute inset-0 rounded-2xl pointer-events-none"></div>
+                                     <ShineBorder shineColor={["#07F4FA", "#00E1E7", "#00B3B8"]}borderWidth={2}/>
 
                                     {/* Step Number Inside Card with Glass Effect */}
                                     <p className="text-white text-lg font-semibold relative text-center mb-5">

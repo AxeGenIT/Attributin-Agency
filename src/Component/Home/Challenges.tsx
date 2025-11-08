@@ -2,6 +2,8 @@
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
+import { ShineBorder } from '@/components/ui/shine-border';
+import LiquidEther from '@/components/LiquidEther';
 
 interface Challenge {
   title: string;
@@ -50,6 +52,25 @@ const ChallengesSection = () => {
 
   return (
     <section className="relative z-10 px-4 sm:px-6 py-12 sm:py-16 lg:py-20 overflow-hidden">
+      <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+  <LiquidEther
+    colors={[ '#1bc8de', '#3b8ce3', '#502bca' ]}
+    mouseForce={20}
+    cursorSize={100}
+    isViscous={false}
+    viscous={30}
+    iterationsViscous={32}
+    iterationsPoisson={32}
+    resolution={0.5}
+    isBounce={false}
+    autoDemo={true}
+    autoSpeed={0.5}
+    autoIntensity={2.2}
+    takeoverDuration={0.25}
+    autoResumeDelay={3000}
+    autoRampDuration={0.6}
+  />
+</div>
       {/* Decorative Image: hero1 right */}
       {/* <img
         src="/hero2.png"
@@ -66,7 +87,7 @@ const ChallengesSection = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-white text-center md:text-2xl text-xl lg:text-5xl section-title italic">
             Yes, we know your challenges<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               as a Digital agency
@@ -86,13 +107,12 @@ const ChallengesSection = () => {
           {challenges.map((challenge, index) => (
             <motion.div
               key={index}
-              className="group my-12 backdrop-blur-md bg-white/10 border-2 border-white/20 hover:border-cyan-400/50 rounded-2xl p-6 sm:p-8 hover:bg-white/15 transition-all duration-300 text-center relative overflow-visible shadow-xl"
+              className="group my-12 backdrop-blur-md bg-white/10     hover:border-cyan-400/50 rounded-2xl p-6 sm:p-8 hover:bg-white/15 transition-all duration-300 text-center relative overflow-visible shadow-xl"
               variants={itemVariants}
               transition={{ duration: 0.3 }}
             >
               {/* Shine Border Effect */}
-              <div className="shine-border absolute inset-0 rounded-2xl pointer-events-none"></div>
-
+             <ShineBorder shineColor={["#07F4FA", "#00E1E7", "#00B3B8"]}borderWidth={2}/>
               {/* Icon with decorative eclipse image */}
               <div className="relative flex items-center justify-center mb-4 sm:mb-6">
                 {/* Decorative eclipse image */}
@@ -110,7 +130,7 @@ const ChallengesSection = () => {
               </div>
 
               {/* Content */}
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 group-hover:text-cyan-400 transition-colors duration-300 leading-tight relative z-10">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4 group-hover:text-cyan-400 transition-colors duration-300 leading-tight relative z-10">
                 {challenge.title}
               </h3>
               <p className="text-white/70 text-sm sm:text-base leading-relaxed group-hover:text-white/90 transition-colors duration-300 relative z-10">

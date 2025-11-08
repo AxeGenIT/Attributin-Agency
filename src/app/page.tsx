@@ -38,13 +38,14 @@ export default function Home() {
       
       <PromoVideo/>
       <DigitalGrow/>
-      <ProcessSection/>
+     
       <TrustedLogo/>
-      <ChallengesSection/>
-      <ContactSection/>
+      
       <TeamSection/>
       <Testimonial/>
-      
+      <ProcessSection/>
+      <ContactSection/>
+       <ChallengesSection/>
     </div>
   );
 }

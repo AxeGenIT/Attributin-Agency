@@ -14,7 +14,7 @@ const GooglePartner = () => {
             <div className="text-white">
                 <h1 className="text-2xl">Trusted by Google to deliver top-tier advertising performance</h1>
                 <p className="text-sm">As a certified <span className="text-[#0B969B]">Google Partner</span>, our strategies are not just creative, they're conversion-proven.</p>
-                 <ShineBorder className="rounded-2xl" borderWidth={2} duration={10} shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
+                 <ShineBorder className="rounded-2xl"   duration={10} shineColor={["#07F4FA", "#00E1E7", "#00B3B8"]} borderWidth={3} />
             </div>
  
         </div>

@@ -32,7 +32,7 @@ const PromoVideo = () => {
             </div>
             <section className="relative z-1 px-4 sm:px-6 py-6 overflow-hidden -mt-96 hidden md:block ">
                 <div className="container mx-auto relative z-20 bg-white/5 backdrop-blur-md  rounded-2xl shadow-2xl p-6 md:p-12 min-h-[570px]  ">
-                <ShineBorder borderWidth={2}  shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
+                <ShineBorder shineColor={["#07F4FA", "#00E1E7", "#00B3B8"]} borderWidth={3}/>
                     <div className="absolute inset-0">
                         {/* Hero1 on the left side */}
                         <img src="/video_left.png" alt="Background Element Left" className="absolute left-0 bottom-0 object-cover opacity-30 h-24 sm:h-32 md:h-48 lg:h-64 xl:h-72 w-auto" />
