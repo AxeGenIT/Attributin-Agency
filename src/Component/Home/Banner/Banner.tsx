@@ -9,9 +9,9 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="container relative h-[850px] flex items-center justify-between px-4">
-        <div className="content absolute top-12 text-white z-40 space-y-5">
-          <h1 className="text-white font-bold text-6xl">
+      <div className="container relative h-[1200px] flex   justify-between px-4">
+        <div className="content  text-white z-40 space-y-5 mt-28">
+          <h1 className="text-white font-bold text-6xl ">
             Built to Scale.<br /> Optimized for Growth.
           </h1>
           <p className="text-base leading-6 max-w-3/6">
@@ -19,16 +19,16 @@ const Banner = () => {
             development, precision analytics, performance-driven ads, and
             conversion-first design.
           </p>
-          <div className="py-2 px-5 bg-white rounded-full w-[150px] flex  items-center justify-center gap-2">
-            <span className="text-black font-semibold text-lg ">Get Start </span>
+          <div className="py-2 px-5 bg-white rounded-full w-[150px] flex  items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:shadow-[0_0_15px_#07F4FA] hover:-translate-y-1">
+            <span className="text-black font-semibold text-lg  ">Get Start </span>
             <MoveRight  className="text-black  mt-1" />
           </div>
         </div>
 
-        <div className="absolute top-0">
+       <div className="absolute top-0">
           <div
             style={{
-              height: "800px",
+              height: "1000px",
               position: "relative",
               overflow: "hidden",
               backgroundColor: "#06101A",
@@ -77,7 +77,7 @@ const Banner = () => {
                 transform: "translateX(-50%)",
                 width: "70%",
                 height: "50%",
-                backgroundColor: "#060010",
+                background:"#fff",
                 borderRadius: "20px",
                 border: "2px solid #3cd0d3",
                 display: "flex",
@@ -88,20 +88,8 @@ const Banner = () => {
                 zIndex: 6,
               }}
             >
-              <div className="rounded-3xl w-full h-full">
-                <div className="aspect-video h-full w-full flex items-center justify-center z-30">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/9RSUQk1ITYI?si=dLPYosTUXIjICDN2"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                    className="w-full h-full rounded-3xl z-30"
-                  ></iframe>
-                </div>
+              <div className="w-full h-full">
+                <img className="w-full h-full" src="/HeroContent.jpg" alt="" />
               </div>
             </div>
 
@@ -112,8 +100,8 @@ const Banner = () => {
               style={{
                 position: "absolute",
                 width: "100%",
-                height:'100%',
-                top: "0%",
+                 
+                top: "-50%",
                 zIndex: 5,
                 mixBlendMode: "lighten",
                 opacity: 0.3,
@@ -130,7 +118,7 @@ const Banner = () => {
               }}
             />
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   );
