@@ -14,7 +14,7 @@ const Banner = () => {
           <h1 className="text-white font-bold text-6xl ">
             Built to Scale.<br /> Optimized for Growth.
           </h1>
-          <p className="text-base leading-6 max-w-3/6">
+          <p className="text-base leading-6 max-w-3/6 mt-3">
             Attribution Booster helps you scale smarter with full-stack web
             development, precision analytics, performance-driven ads, and
             conversion-first design.
