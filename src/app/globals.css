@@ -271,7 +271,9 @@
     --deg: 360deg;
   }
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .partner::before{
   content: '';
   position: absolute;
