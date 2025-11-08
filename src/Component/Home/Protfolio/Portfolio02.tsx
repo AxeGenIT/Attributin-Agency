@@ -109,41 +109,41 @@ import { HeroParallax } from "@/components/ui/hero-parallax";
 const Portfolio02 = () => {
     const products = [
   {
-    title: "Moonbeam",
+    title: "Travel",
     link: "https://gomoonbeam.com",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "/project1.png",
   },
   {
-    title: "Cursor",
+    title: "E-commerce",
     link: "https://cursor.so",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      "/project3.png",
   },
   {
-    title: "Rogue",
+    title: "Mobile app",
     link: "https://userogue.com",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+      "/project4.png",
   },
  
   {
-    title: "Editorially",
+    title: "Digital Marketing",
     link: "https://editorially.org",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+      "/project4.png",
   },
   {
-    title: "Editrix AI",
+    title: "Coroporate",
     link: "https://editrix.ai",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      "/project5.png",
   },
   {
-    title: "Pixel Perfect",
+    title: "Brand Indentity",
     link: "https://app.pixelperfect.quest",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "/project6.png",
   },
  
   {

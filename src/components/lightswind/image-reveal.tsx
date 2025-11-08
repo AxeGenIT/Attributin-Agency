@@ -13,24 +13,34 @@ interface VisualItem {
 const visualData: VisualItem[] = [
   {
     key: 1,
-    url: "https://images.pexels.com/photos/9002742/pexels-photo-9002742.jpeg",
-    label: "Pinky Island",
+    url: "/project1.png",
+    label: "Travel Website",
   },
   {
     key: 2,
-    url: "https://images.pexels.com/photos/31622979/pexels-photo-31622979.jpeg",
-    label: "Greedy Model",
+    url: "/project3.png",
+    label: "E-commerce Platform",
   },
   {
     key: 3,
-    url: "https://images.pexels.com/photos/12187128/pexels-photo-12187128.jpeg",
-    label: "Sigma Connect",
+    url: "/project4.png",
+    label: "Mobile App Design",
   },
   {
     key: 4,
-    url: "https://images.pexels.com/photos/28168248/pexels-photo-28168248.jpeg",
-    label: "Futuristic Gamma",
+    url: "/project4.png",
+    label: "Digital Marketing Campaing",
   },
+  {
+    key: 5,
+    url: "/project5.png",
+    label: "Corporate Website",
+  },
+  {
+    key: 6,
+    url: "/project5.png",
+    label: "Brand Identity Design",
+  }
 ];
 
 const ImageReveal: React.FC = () => {

@@ -125,7 +125,7 @@ const ResultsSection: React.FC = () => {
         <BorderBeam
         duration={6}
         size={300} reverse={true}
-        className="from-transparent via-red-500 to-transparent"
+        className="from-transparent via-blue-500 to-transparent"
       />
           </motion.div>
 
@@ -173,7 +173,7 @@ const ResultsSection: React.FC = () => {
         <BorderBeam
         duration={6}
         size={300} reverse={true}
-        className="from-transparent via-red-500 to-transparent"
+        className="from-transparent via-blue-500 to-transparent"
       />
           </motion.div>
         </div>
