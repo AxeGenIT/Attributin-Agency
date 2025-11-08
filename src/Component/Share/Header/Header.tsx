@@ -40,7 +40,7 @@ const Header = () => {
         </div>
       </div>
       <div className="container block md:block lg:hidden">
-        <div style={{ height: "20vh" }}>
+        <div style={{ height: "10vh" }}>
           <StaggeredMenu
             position="right"
             items={menuItems}
